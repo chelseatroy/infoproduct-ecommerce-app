@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InfoproductEcommerceApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <div class ="light-colored-part">
+
+        <form class="form-inline" role="form" id="sign-in">
+            <p>Already a member?</p>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail2">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword2">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary, sign-in-btn">Sign in</button>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+        </form>
+
+        <%= image_tag('logo.png') %>
+
+        <ul class="nav nav-tabs">
+          <li class="active, menu"><a href=#>Daily</a></li>
+          <li class="menu"><a href=#>Free Reports</a></li>
+          <li class="menu"><a href=#>Magazines</a></li>
+          <li class="menu"><a href=#>Webcasts</a></li>
+          <li class="menu"><a href=#>Symposium</a></li>
+          <li class="menu"><a href=#>Contact Us</a></li>
+        </ul>
+
+      </div>
+
+      <div class="container-fluid">
+          <% flash.each do |name, msg| %>
+            <%= content_tag :div, msg, class: "alert alert-#{name}" %>
+          <% end %>
+
+          <%= yield %>
+      </div>
+
+
+      <div class="row"><footer>Copyright &copy 2008 - <%= @current_year %></footer></div>
+</body>
+
+</html>

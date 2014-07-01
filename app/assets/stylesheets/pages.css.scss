@@ -1,0 +1,135 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$light_color: #FCCA00;
+$medium_color: #C8523B;
+$dark_color: #276C85;
+
+.light_color{
+  color: $light_color
+}
+
+.medium_color{
+  color: $medium_color
+}
+
+.dark_color{
+ color: $dark_color
+}
+
+
+
+footer{
+  height: 50px;
+}
+
+h1#tagline, h2{
+  color: $medium_color;
+  padding: 0.1em 0em 0.1em 0em;
+}
+
+.hook{
+  font-size: 1.6em;
+  text-align: left;
+  margin: 3em 1em 0em 0em;
+  color: $dark_color;
+}
+
+.lead{
+  color: $dark_color;
+  text-align: center;
+  font-weight:strong;
+  margin: 1em;
+}
+
+#lead-in{
+  position:relative;
+  left: 1em;
+  padding: 5px;
+  color: $medium_color;
+  font-size:2em;
+}
+
+.light-colored-part{
+  background-color: $light_color;
+  padding: 1.2em;
+}
+
+#myCarousel{
+  width: 198px;
+  height: 256px;
+  float:left;
+  position:relative;
+  top:1em;
+}
+
+.nav {
+  color: $dark_color;
+  font-size:1.2em;
+}
+
+.opt-in{
+  color: $dark_color;
+  padding: 10px;
+}
+
+.opt-in-large{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.opt-in-small{
+  font-size:18px;
+}
+
+.product-create-button{
+  width:400px;
+  font-size: 30px;
+  margin: 20px 0 20px 0;
+}
+
+.show-page-btn{
+  width:200px;
+  font-size: 24px;
+}
+
+.show-page-nav-btn{
+  width:300px;
+  font-size: 18px;
+}
+
+#sign-in{
+  float: right;
+  position:relative;
+  top:0.6em;
+  color: $dark_color
+}
+
+#sign-in > p{
+  font-size: 18px;
+}
+
+.sign-in-btn{
+  color:white;
+  background-color:$dark_color;
+}
+
+.smaller-home-copy{
+  font-size: 1.6em;
+  color: $dark_color;
+  margin: 0em 2em;
+}
+
+.thumbnail{
+  background-color:$light_color
+}
+
+.thumbnail :hover{
+  background-color:$light_color, 80%;
+}
+
+.who-we-are{
+  position: relative;
+  top: 2em;
+}
+

@@ -1,0 +1,19 @@
+<h1 class="lead-in medium_color">You are currently viewing our products as an admin.<h1>
+
+<a href="/products/new" class="btn btn-success  product-create-button" role="button">Create a New Product</a>
+
+<div class="row">
+  
+  <% @products.each do |product| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <a href="/products/<%= product.id %>"><%= image_tag(product.photo_url) %></a>
+        <div class="caption">
+          <a href="/products/<%= product.id %>"><h3><%= product.title %></h3></a>
+          <p><a href="/products/<%= product.id %>/edit" class="btn btn-warning" role="button">Edit</a> <a data-confirm="You are about to delete <%= product.title %>. Are you sure you want to do that?" href="/products/<%= product.id %>" data-method="delete" rel="nofollow" class="btn btn-danger" role="button">Delete</a></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+</div>

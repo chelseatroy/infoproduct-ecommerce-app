@@ -1,0 +1,17 @@
+<div class="col-xs-8">
+  <h1 class="dark_color"><%= @product.title %></h1>
+  <%= image_tag(@product.photo_url) %>
+  <p><%= @product.description %></p>
+  <h2>Credits: <%= @product.credits %></h2>
+  <h2>Time to learn: <%= @product.time_to_learn %></h2>
+  <h2>Only $<%= @product.price %>!!!</h2>
+</div>
+
+<div class="col-xs-4">
+  <h3> You are currently viewing this page in admin mode. This means that you can edit or delete this product page with the buttons below.</h3>
+  <p><a href="/products/<%= @product.id %>/edit" class="btn btn-warning show-page-btn" role="button">Edit</a></p>
+  <p><a data-confirm="You are about to delete the product for <%= @product.title %>. Are you sure you want to do that?" href="/products/<%= @product.id %>" data-method="delete" rel="nofollow" class="btn btn-danger show-page-btn" role="button">Delete</a></p>
+  <p><a href="/products" class="btn btn-info show-page-nav-btn" role="button">Return to All Products</a></p>
+</div>
+
+ 

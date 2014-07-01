@@ -1,0 +1,94 @@
+//not recognizing vars in sass
+$light_color: #FCCA00;
+$medium_color: #C8523B;
+$dark_color: #276C85;
+
+h1#tagline, h2{
+  color: $medium_color;
+  padding: 0.1em 0em 0.1em 0em;
+}
+
+#sign-in{
+  float: right;
+  position:relative;
+  top:0.6em;
+  color: $dark_color
+}
+
+#sign-in > p{
+  font-size: 18px;
+}
+
+#myCarousel{
+  width: 198px;
+  height: 256px;
+  float:left;
+  position:relative;
+  top:1em;
+}
+
+#lead-in{
+  position:relative;
+  left: 1em;
+  padding: 5px;
+  color: $medium_color;
+  font-size:2em;
+}
+
+.lead{
+  color: $dark_color;
+  text-align: center;
+  font-weight:strong;
+  margin: 1em;
+}
+
+.hook{
+  font-size: 1.6em;
+  text-align: left;
+  margin: 3em 1em 0em 0em;
+  color: $dark_color;
+}
+
+.smaller-home-copy{
+  font-size: 1.6em;
+  color: $dark_color;
+  margin: 0em 2em;
+}
+
+.nav {
+  color: $dark_color;
+  font-size:1.2em;
+}
+
+.light-colored-part{
+  background-color: $light_color;
+  padding: 1.2em;
+}
+
+.opt-in{
+  color: $dark_color;
+  padding: 10px;
+}
+
+.opt-in-large{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.opt-in-small{
+  font-size:18px;
+}
+
+.sign-in-btn{
+  color:white;
+  background-color:$dark_color;
+}
+
+.who-we-are{
+  position: relative;
+  top: 2em;
+}
+
+footer{
+  height: 50px;
+}
